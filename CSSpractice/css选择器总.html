@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css选择器汇总</title>
+    <style type="text/css">
+            p{
+                color: red;
+            }
+            #part1{
+                color: #000;
+            }
+        #part2{
+            color: yellow;
+        }
+        #part3{
+            color: green;
+        }
+        .teshu{
+            color: blue;
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+<p>标签选择器，选择所有该标签，进行样式改变</p>
+<p id="part1">id选择器，id具有唯一性，使用#选择</p>
+<p id="part2">id选择器，具有唯一性</p>
+<p id="part3">id选择器，具有唯一性</p>
+<p class="teshu">class选择器，可以不唯一，权重比标签选择器高，使用.选择</p>
+<p class="teshu">class选择器中可以写多个名字，进行公共类的提取，减少冗余，一般来说不使用id</p>
+<p>后代选择器，选择器之间是空格,选择的是后代而不仅仅是儿子</p>
+<p>交集选择器是后代选择器没有空格</p>
+<p>并集选择器，选择器之间是,</p>
+<p>通配符* ,可以选中页面内的所有标签</p>
+<p>儿子选择器，选择器之间是&gt，IE7开始兼容，IE6不兼容，选择的是儿子</p>
+<p>下一个兄弟选择器 ，+ IE7开始兼容，IE6不兼容</p>
+<p></p>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css清除浮动</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+        /*    height: 50px;*/
+            overflow: hidden;
+            border:1px solid red;
+        }
+        li{
+            float: left;
+            width: 90px;
+            height: 50px;
+            margin-right: 10px;
+            background-color: aqua;
+            text-align: center;
+        }
+       /* .box2{
+            clear: both;
+        }*/
+       /* .c1{
+            clear: both;
+        }*/
+    </style>
+</head>
+<body>
+<div>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+    </ul>
+</div>
+<div class="c1"></div>
+<div class="box2">
+    <ul>
+        <li>设计模式</li>
+        <li>学习方法</li>
+        <li>面试技巧</li>
+    </ul>
+</div>
+<p>清除浮动方法一：给父亲加高</p>
+<p>清除浮动方法二：clear:both;</p>
+<p>清除浮动方法三：隔墙法</p>
+<p>清除浮动方法四：给父元素加overflow:hidden</p>
+</body>
+</html>
